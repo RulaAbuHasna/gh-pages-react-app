@@ -4,6 +4,11 @@ on:
     branches:
       - master
       - main
+
+permissions:
+  id-token: write
+  pages: write
+
 jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
